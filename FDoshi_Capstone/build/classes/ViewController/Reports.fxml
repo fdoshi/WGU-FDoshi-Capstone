@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minWidth="-Infinity" prefHeight="600.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewController.ReportsController">
+   <children>
+      <Label alignment="CENTER" prefHeight="57.0" prefWidth="850.0" style="-fx-background-color: #8083c9;" text="Rounds Report" textAlignment="CENTER" textFill="#e8e2e2">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="reportTxtArea" layoutX="31.0" layoutY="80.0" prefHeight="401.0" prefWidth="780.0" />
+      <Button layoutX="31.0" layoutY="512.0" mnemonicParsing="false" onAction="#onActionPrintReport" prefHeight="57.0" prefWidth="267.0" style="-fx-background-color: #c2c2d6;" text="Print Rounds Report">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="664.0" layoutY="516.0" mnemonicParsing="false" onAction="#onActionBack" prefHeight="50.0" prefWidth="147.0" style="-fx-background-color: #d2d2d2;" text="&lt;&lt; Back To Menu" />
+   </children>
+</AnchorPane>

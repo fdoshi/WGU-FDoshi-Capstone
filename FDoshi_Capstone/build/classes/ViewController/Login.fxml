@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: #e7e7e7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewController.LoginController">
+   <children>
+      <Button defaultButton="true" layoutX="213.0" layoutY="300.0" onAction="#onActionLogIn" prefHeight="31.0" prefWidth="109.0" text="Log In" />
+      <Button cancelButton="true" layoutX="372.0" layoutY="331.0" mnemonicParsing="false" onAction="#onActionCancel" prefHeight="31.0" prefWidth="75.0" style="-fx-background-color: #d2d2d2;" text="Cancel" />
+      <TextField fx:id="userNameTxt" layoutX="214.0" layoutY="164.0" prefHeight="31.0" prefWidth="201.0" promptText="User Name" />
+      <PasswordField fx:id="pwTxt" layoutX="213.0" layoutY="235.0" prefHeight="25.0" prefWidth="201.0" promptText="Password" />
+      <Label fx:id="formLbl" alignment="CENTER" maxWidth="500.0" minWidth="-Infinity" prefHeight="77.0" prefWidth="500.0" style="-fx-background-color: #8083c9;" text="SAFE  HAND-OFF" textAlignment="CENTER" textFill="#e8e2e2" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="userLbl" layoutX="85.0" layoutY="169.0" text="User Name" textFill="#0e0354">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="pwLbl" layoutX="85.0" layoutY="237.0" text="Password" textFill="#0d0353">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField alignment="CENTER" editable="false" layoutY="93.0" prefHeight="17.0" prefWidth="500.0" style="-fx-background-color: #B2D2E1;" text="Please contact HR at 832-832-0000 or hr@riverstonecardiology.com for login credentials. " />
+      <Label fx:id="errorMsgLbl" layoutX="83.0" layoutY="134.0" prefHeight="17.0" prefWidth="332.0" textAlignment="CENTER" textFill="RED" />
+   </children>
+</AnchorPane>
